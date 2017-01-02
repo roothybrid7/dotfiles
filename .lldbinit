@@ -1,0 +1,19 @@
+# po $eax, po $r0
+
+script import os, sys
+# So that ~/utils.py takes precedence.
+script sys.path[:0] = [os.path.expanduser('~')]
+#script import utils
+command alias pwd script print os.getcwd()
+command script add -f os.chdir cd
+command script add -f os.system system
+
+# recursiveDescription
+command regex pv 's/^[[:space:]]*$/po [[[UIApplication sharedApplication] keyWindow] recursiveDescription]/' 's/^(.+)$/po [%1 recursiveDescription]/'
+
+ _autolayoutTrace
+command regex pa 's/^[[:space:]]*$/po [[[UIApplication sharedApplication] keyWindow] _autolayoutTrace]/' 's/^(.+)$/po [%1 _autolayoutTrace]/'
+
+# stacktrace
+command regex strace 's/^[[:space:]]*$/ po [NSThread callStackSymbols]/'
+command script import "~/Library/Application Support/Realm/rlm_lldb.py" --allow-reload
