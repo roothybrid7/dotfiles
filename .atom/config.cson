@@ -1,0 +1,41 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "804e5b24-c1ee-4574-9412-54db384201aa"
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-plus":
+    enableExtendedUnicodeSupport: true
+  core:
+    customFileTypes:
+      "source.git-config": [
+        "git/config"
+        "git/config.local##Darwin"
+        "git/config.local##Linux"
+        "git/ignore"
+        "git/attributes"
+      ]
+      "source.shell": [
+        "inputrc"
+        "bash/env"
+        ".ssh/config"
+      ]
+    packagesWithKeymapsDisabled: [
+      "autocomplete-plus"
+    ]
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    fontSize: 12
+    showIndentGuide: true
+  emmet: {}
+  "exception-reporting":
+    userId: "15735880-16cd-31df-d9cf-1e71db091feb"
+  "git-plus":
+    general:
+      _analyticsUserId: "70119de4-9539-40c1-85b2-0ea3d8177f0d"
+  pigments: {}
+  "project-manager": {}
+  whitespace: {}
