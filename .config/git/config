@@ -11,6 +11,7 @@
 	ci = commit
 	st = status
 	di = diff
+	dic = diff --cached
 	tree = log --graph --decorate --oneline
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
