@@ -1,0 +1,20 @@
+#!/bin/bash
+
+system_type=$(uname -s)
+
+shopt -s expand_aliases
+
+# ls options
+if [ "$system_type" = "Darwin" ]; then
+  alias ls="ls -FG"
+else
+  alias ls="ls -F --color=auto"
+fi
+alias ll="ls -l"
+alias llA="ll -A"
+
+alias xccleanall='xcodebuild -list | grep -A8 "Build Configuration" | sed -e "1d" | xargs -n1 xcodebuild clean -alltargets -configuration'
+
+alias be='bundle exec'
+alias bep='bundle exec pod'
+alias ber='bundle exec rake'
