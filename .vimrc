@@ -1,3 +1,11 @@
+let $XDG_CONFIG_HOME=expand('~/.config')
+let $XDG_DATA_HOME=expand('~/.local/share')
+let $XDG_CACHE_HOME=expand('~/.cache')
+
+if filereadable(glob(join([$XDG_CONFIG_HOME, 'bash', 'env'], '/')))
+  let $BASH_ENV=join([$XDG_CONFIG_HOME, 'bash', 'env'], '/')
+endif
+
 " --------------------------------------------------------------------------------
 " Encodings
 " --------------------------------------------------------------------------------
