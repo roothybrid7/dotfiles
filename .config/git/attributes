@@ -1,0 +1,7 @@
+# Global git attributes
+# Diff by EXIF
+# 1. brew install exiftool
+# 2. git config diff.exif.textconv exiftool
+# *.png diff=exif
+# *.jpg diff=exif
+# *.gif diff=exif

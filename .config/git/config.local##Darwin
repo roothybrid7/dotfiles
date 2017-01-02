@@ -1,0 +1,5 @@
+[user]
+	name = Satoshi Ohki
+	email = roothybrid7@gmail.com
+[credential]
+	helper = osxkeychain

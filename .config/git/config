@@ -1,0 +1,24 @@
+[core]
+	pager = lv -c
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	ui = auto
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	di = diff
+	tree = log --graph --decorate --oneline
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = ~/.stCommitMsg
+[include]
+	path = ~/.config/git/config.local

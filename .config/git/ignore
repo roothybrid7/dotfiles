@@ -1,0 +1,6 @@
+# Global gitignore
+*~
+.DS_Store
+*.swp
+*.bk
+test
