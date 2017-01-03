@@ -23,3 +23,6 @@
 	template = ~/.stCommitMsg
 [include]
 	path = ~/.config/git/config.local
+[ghq]
+	root = ~/.ghq
+	root = ~/.go
