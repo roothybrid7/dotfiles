@@ -4,3 +4,4 @@
 *.swp
 *.bk
 test
+*.pyc
