@@ -19,10 +19,13 @@
         "inputrc"
         "bash/env"
         ".ssh/config"
+        ".bash_profile"
+        ".bashrc"
       ]
     packagesWithKeymapsDisabled: [
       "autocomplete-plus"
     ]
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
