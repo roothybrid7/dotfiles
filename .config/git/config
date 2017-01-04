@@ -19,10 +19,9 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[commit]
-	template = ~/.stCommitMsg
 [include]
 	path = ~/.config/git/config.local
 [ghq]
 	root = ~/.ghq
 	root = ~/.go
+	root = ~/.gvm/pkgsets/system/global
