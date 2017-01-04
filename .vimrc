@@ -115,12 +115,11 @@ set statusline+=[L=%l/%L]
 set wildmenu
 set display=lastline
 
-
 " --------------------------------------------------------------------------------
 " Paste
 " --------------------------------------------------------------------------------
-au InsertEnter * set paste
-au InsertLeave * set nopaste
+"au InsertEnter * set paste
+"au InsertLeave * set nopaste
 
 if has("unix")
     let s:uname = system("echo -n $(uname -s)")
@@ -213,6 +212,7 @@ au BufNewFile,BufRead *.scss set ft=scss
 
 au BufNewFile,BufRead *.conf set ft=cfg
 au BufNewFile,BufRead *.toml set ft=cfg
+au BufNewFile,BufRead *.yml set ft=yaml
 
 au BufNewFile,BufRead Cartfile set filetype=swift
 au BufNewFile,BufRead *.stencil set filetype=swift
