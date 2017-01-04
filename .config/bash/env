@@ -4,6 +4,7 @@ system_type=$(uname -s)
 
 shopt -s expand_aliases
 
+# System utils
 # ls options
 if [ "$system_type" = "Darwin" ]; then
   alias ls="ls -FG"
@@ -13,8 +14,14 @@ fi
 alias ll="ls -l"
 alias llA="ll -A"
 
+# Xcode
 alias xccleanall='xcodebuild -list | grep -A8 "Build Configuration" | sed -e "1d" | xargs -n1 xcodebuild clean -alltargets -configuration'
 
+# Bundler
 alias be='bundle exec'
 alias bep='bundle exec pod'
 alias ber='bundle exec rake'
+
+# ghq
+alias cd-repo='cd $(ghq list -p | peco)'
+alias open-repo='gh-open $(ghq list -p | peco)'
