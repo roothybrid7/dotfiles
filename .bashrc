@@ -5,7 +5,6 @@ brew_prefix=$(brew --prefix)
 shopt -s expand_aliases
 
 [ ! -d "$XDG_DATA_HOME/bash" ] && mkdir -p "$XDG_DATA_HOME/bash"
-[[ -f /Applications/SourceTree.app/Contents/Resources/stree  ]] && [[ ! -f /usr/local/bin/stree ]] && ln -s /Applications/SourceTree.app/Contents/Resources/stree /usr/local/bin/stree
 
 # Load bash completions
 compl_files="$brew_prefix/etc/bash_completion.d/*"
