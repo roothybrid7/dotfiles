@@ -29,7 +29,7 @@ export PATH=/usr/local/sbin:$PYENV_ROOT/shims:$RBENV_ROOT/bin:$PATH:$GOPATH/bin
 if [[ "$system_type" = "Darwin" ]]; then
   py_ver=$(/usr/bin/python -V 2>&1 >/dev/null | sed -e 's/Python *//g' | awk -F'.' '{OFS=".";print $1,$2}')
   py_ver=$(echo -n $py_ver)
-  export PATH=$HOME/Library/Python/2.7/bin:$PATH
+  export PATH=$HOME/Library/Python/$py_ver/bin:$PATH
 else
   export PATH=$HOME/.local/bin:$PATH
 fi
