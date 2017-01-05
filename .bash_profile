@@ -4,6 +4,8 @@ system_type=$(uname -s)
 
 # XDG Base Directory
 export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_BIN_HOME="$HOME/.local/bin"
+export XDG_LIB_HOME="$HOME/.local/lib"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
@@ -34,8 +36,9 @@ else
   export PATH=$HOME/.local/bin:$PATH
 fi
 
-[[ -f "$XDG_CONFIG_HOME/bash/env" ]] && . "$XDG_CONFIG_HOME/bash/env"
 # Use a dotfile in $HOME directory for regacy tools
 [[ -f "$HOME/.bashrc" ]] && . "$HOME/.bashrc"
+
+[[ -f "$XDG_CONFIG_HOME/bash/env" ]] && . "$XDG_CONFIG_HOME/bash/env"
 
 [[ -s "/Users/roothy/.gvm/scripts/gvm" ]] && source "/Users/roothy/.gvm/scripts/gvm"
