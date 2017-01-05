@@ -1,0 +1,15 @@
+#!/bin/bash
+# This hook is sourced after a new virtualenv is activated.
+
+source_pip_conf=
+
+[[ -f "$VIRTUAL_ENV/pip.conf" ]] || {
+  system_type=$(uname -s)
+  if [[ "$system_type" = "Darwin" ]]; then
+    source_pip_conf="$HOME/Library/Application Support/pip/pip.conf"
+  else
+    source_pip_conf="$HOME/.config/pip/pip.conf"
+  fi
+}
+
+cp "${WORKON_HOME}/pip.conf" "${VIRTUAL_ENV}/pip.conf"
