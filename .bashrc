@@ -13,7 +13,8 @@ do
   . $f
 done
 
-PS1='\[\e[35m\]\h\[\e[00m\]:\[\e[1;36m\]\W\[\e[00m\] \u\[\e[1;32m\]$(__git_ps1)\[\e[00m\] \[\e[4;33m\]\t\[\e[00m\]\n\$ '
-
+which pip >/dev/null 2>&1 && eval "$(pip completion --bash)"
 which pyenv >/dev/null && eval "$(pyenv init -)"
 which rbenv >/dev/null && eval "$(rbenv init -)"
+
+PS1='\[\e[35m\]\h\[\e[00m\]:\[\e[1;36m\]\W\[\e[00m\] \u\[\e[1;32m\]$(__git_ps1)\[\e[00m\] \[\e[4;33m\]\t\[\e[00m\]\n\$ '
