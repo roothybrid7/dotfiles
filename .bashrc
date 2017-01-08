@@ -19,6 +19,7 @@ which pip >/dev/null 2>&1 && eval "$(pip completion --bash)"
 which pyenv >/dev/null && eval "$(pyenv init -)"
 which rbenv >/dev/null && eval "$(rbenv init -)"
 
+# virtualenv for python
 which virtualenvwrapper.sh >/dev/null && {
   export WORKON_HOME=$XDG_DATA_HOME/virtualenvs
   . virtualenvwrapper.sh
