@@ -14,6 +14,7 @@ do
 done
 
 [[ -f "$XDG_LIB_HOME/bash/gpip.sh" ]] && . "$XDG_LIB_HOME/bash/gpip.sh"
+[[ -f "$XDG_LIB_HOME/bash/ln_yadm_encrypt.sh" ]] && . "$XDG_LIB_HOME/bash/ln_yadm_encrypt.sh"
 
 which pip >/dev/null 2>&1 && eval "$(pip completion --bash)"
 which pyenv >/dev/null && eval "$(pyenv init -)"

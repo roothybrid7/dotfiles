@@ -2,6 +2,22 @@
 
 ## Getting Started
 
+### GPG keys import
+
+```bash
+# Import pub key
+gpg --import xxxxx.asc
+# Import owner trust
+gpg --import-ownertrust ownertrust.asc
+```
+
+### yadm decrypt
+
+```bash
+yadm decrypt
+ln_yadm_encrypt
+```
+
 ### Set Hub credential
 
 created `.config/hub`
