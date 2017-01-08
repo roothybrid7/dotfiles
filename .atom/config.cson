@@ -28,6 +28,7 @@
       "solarized-dark-syntax"
     ]
   editor:
+    fontFamily: "RictyDiminished-Regular"
     fontSize: 12
     showIndentGuide: true
   emmet: {}
