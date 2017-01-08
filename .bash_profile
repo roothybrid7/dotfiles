@@ -25,8 +25,9 @@ export EDITOR=vim
 export GOPATH="$HOME/.go"
 export PYENV_ROOT="$HOME/.pyenv"
 export RBENV_ROOT="$HOME/.rbenv"
+export NODENV_ROOT="$HOME/.nodenv"
 
-export PATH=/usr/local/sbin:$PYENV_ROOT/shims:$RBENV_ROOT/bin:$PATH:$GOPATH/bin
+export PATH=/usr/local/sbin:$PYENV_ROOT/shims:$RBENV_ROOT/shims:$NODENV_ROOT/shims:$PATH:$GOPATH/bin
 
 # Python user site packages
 if [[ "$system_type" = "Darwin" ]]; then
