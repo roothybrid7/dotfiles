@@ -19,6 +19,7 @@ if [ "$system_type" != "Darwin" ]; then
 fi
 export PAGER='lv -c'
 export HTTPIE_CONFIG_DIR="$XDG_CONFIG_HOME/httpie"
+export EDITOR=vim
 
 # XXXenv
 export GOPATH="$HOME/.go"
