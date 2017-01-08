@@ -37,6 +37,7 @@ else
 fi
 
 export IRBRC="$XDG_CONFIG_HOME/ruby/irbrc"
+[[ -f "$XDG_CONFIG_HOME/bash/profile.local" ]] && . "$XDG_CONFIG_HOME/bash/profile.local"
 
 # Use a dotfile in $HOME directory for regacy tools
 [[ -f "$HOME/.bashrc" ]] && . "$HOME/.bashrc"

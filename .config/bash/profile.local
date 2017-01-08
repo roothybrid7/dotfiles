@@ -1,0 +1,3 @@
+#!/bin/bash
+
+[[ -f "$XDG_DATA_HOME/ansible/.provisioning_vault_pass.txt" ]] && export ANSIBLE_VAULT_PASSWORD_FILE=$XDG_DATA_HOME/ansible/.provisioning_vault_pass.txt

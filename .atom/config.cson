@@ -21,6 +21,7 @@
         ".ssh/config"
         ".bash_profile"
         ".bashrc"
+        "profile.local"
       ]
     telemetryConsent: "no"
     themes: [
