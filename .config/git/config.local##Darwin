@@ -3,3 +3,7 @@
 	email = roothybrid7@gmail.com
 [credential]
 	helper = osxkeychain
+[user]
+	signingkey = 6551AC9011140CEA
+[commit]
+	gpgsign = true
