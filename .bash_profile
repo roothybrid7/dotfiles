@@ -36,6 +36,8 @@ else
   export PATH=$HOME/.local/bin:$PATH
 fi
 
+export IRBRC="$XDG_CONFIG_HOME/ruby/irbrc"
+
 # Use a dotfile in $HOME directory for regacy tools
 [[ -f "$HOME/.bashrc" ]] && . "$HOME/.bashrc"
 

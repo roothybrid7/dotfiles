@@ -1,0 +1,8 @@
+#~/.irbrc
+##load File.expand_path(File.join(File.dirname(__FILE__), 'dotfiles', '.irbrc'))
+
+# load libraries
+require 'irb/completion'
+require 'pp'
+
+IRB.conf[:SAVE_HISTORY] = 100000
