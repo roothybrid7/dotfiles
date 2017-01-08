@@ -1,4 +1,5 @@
 bundler
+bundler_bash_completion
 pry
 pry-byebug
 rbenv-rehash
