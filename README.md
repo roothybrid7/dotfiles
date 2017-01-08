@@ -11,10 +11,11 @@ gpg --import xxxxx.asc
 gpg --import-ownertrust ownertrust.asc
 ```
 
-### Setup Pass
+### yadm decrypt
 
 ```bash
-pass git clone https://github.com/xxxxx/password-store.git
+yadm decrypt
+ln_yadm_encrypt
 ```
 
 ### Set Hub credential
@@ -32,6 +33,9 @@ pod trunk register orta@cocoapods.org 'Orta Therox' --description='macbook air'
 created `.npmrc`
 
 ```bash
+nodenv install 7.4.0
+nodenv rehash
+nodenv shell 7.4.0
 npm adduser
 ```
 
