@@ -20,6 +20,7 @@ which pip >/dev/null 2>&1 && eval "$(pip completion --bash)"
 which pyenv >/dev/null && eval "$(pyenv init -)"
 which rbenv >/dev/null && eval "$(rbenv init -)"
 which nodenv >/dev/null && eval "$(nodenv init -)"
+which swiftenv >/dev/null && eval "$(swiftenv init -)"
 
 # virtualenv for python
 which virtualenvwrapper.sh >/dev/null && {
