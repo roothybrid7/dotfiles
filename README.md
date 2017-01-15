@@ -1,5 +1,7 @@
 # Dotfile by yadm
 
+Managed by [yadm](https://thelocehiliosan.github.io/yadm/)
+
 ## Getting Started
 
 ### GPG keys import
