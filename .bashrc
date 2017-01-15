@@ -1,17 +1,24 @@
 #!/bin/bash
 
-brew_prefix=$(brew --prefix)
-
 shopt -s expand_aliases
 
 [ ! -d "$XDG_DATA_HOME/bash" ] && mkdir -p "$XDG_DATA_HOME/bash"
 
 # Load bash completions
-compl_files="$brew_prefix/etc/bash_completion.d/*"
-for f in $compl_files
-do
-  . $f
-done
+load_bash_completions() {
+  for f in $@
+  do
+    source $f
+  done
+}
+
+if [[ -d "/etc/bash_completion.d" ]]; then
+  load_bash_completions "/etc/bash_completion.d/*"
+fi
+which brew >/dev/null && {
+  brew_prefix=$(brew --prefix)
+  load_bash_completions "$brew_prefix/etc/bash_completion.d/*"
+}
 
 [[ -f "$XDG_LIB_HOME/bash/gpip.sh" ]] && . "$XDG_LIB_HOME/bash/gpip.sh"
 [[ -f "$XDG_LIB_HOME/bash/ln_yadm_encrypt.sh" ]] && . "$XDG_LIB_HOME/bash/ln_yadm_encrypt.sh"
