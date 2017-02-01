@@ -47,4 +47,4 @@ export IRBRC="$XDG_CONFIG_HOME/ruby/irbrc"
 
 [[ -f "$XDG_CONFIG_HOME/bash/env" ]] && . "$XDG_CONFIG_HOME/bash/env"
 
-[[ -s "/Users/roothy/.gvm/scripts/gvm" ]] && source "/Users/roothy/.gvm/scripts/gvm"
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"

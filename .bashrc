@@ -39,4 +39,4 @@ export PIP_REQUIRE_VIRTUALENV=true
 PS1='\[\e[35m\]\h\[\e[00m\]:\[\e[1;36m\]\W\[\e[00m\] \u\[\e[1;32m\]$(__git_ps1)\[\e[00m\] \[\e[4;33m\]\t\[\e[00m\]\n\$ '
 
 # added by travis gem
-[ -f /Users/roothy/.travis/travis.sh ] && source /Users/roothy/.travis/travis.sh
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
