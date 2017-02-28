@@ -29,9 +29,8 @@
       "solarized-dark-syntax"
     ]
   editor:
-    autoIndent: false
-    fontFamily: "RictyDiminished-Regular"
-    fontSize: 12
+    fontFamily: "FiraCode-Retina"
+    fontSize: 11
     showIndentGuide: true
   emmet: {}
   "exception-reporting":
