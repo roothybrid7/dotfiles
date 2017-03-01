@@ -29,7 +29,6 @@
       "solarized-dark-syntax"
     ]
   editor:
-    autoIndent: false
     fontFamily: "RictyDiminished-Regular"
     fontSize: 12
     showIndentGuide: true
