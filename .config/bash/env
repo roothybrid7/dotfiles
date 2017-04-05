@@ -13,6 +13,7 @@ else
 fi
 alias ll="ls -l"
 alias llA="ll -A"
+alias apm-list="apm list --installed --bare"
 
 # Xcode
 alias xccleanall='xcodebuild -list | grep -A8 "Build Configuration" | sed -e "1d" | xargs -n1 xcodebuild clean -alltargets -configuration'

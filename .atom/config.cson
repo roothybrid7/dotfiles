@@ -40,6 +40,8 @@
       verboseCommits: true
     general:
       _analyticsUserId: "70119de4-9539-40c1-85b2-0ea3d8177f0d"
+  "linter-ui-default":
+    showPanel: true
   pigments: {}
   "project-manager": {}
   welcome:
