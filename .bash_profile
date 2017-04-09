@@ -27,8 +27,11 @@ export PYENV_ROOT="$HOME/.pyenv"
 export RBENV_ROOT="$HOME/.rbenv"
 export NODENV_ROOT="$HOME/.nodenv"
 export SWIFTENV_ROOT="$HOME/.swiftenv"
+export GOENVGOROOT="$XDG_LIB_HOME/.goenvs"
+export GOENVTARGET="$XDG_BIN_HOME"
+export GOENVHOME="$XDG_DATA_HOME/workspace"
 
-export PATH=/usr/local/sbin:$PYENV_ROOT/shims:$RBENV_ROOT/shims:$NODENV_ROOT/shims:$SWIFTENV_ROOT/bin:$PATH:$GOPATH/bin
+export PATH=/usr/local/sbin:$XDG_BIN_HOME:$PYENV_ROOT/shims:$RBENV_ROOT/shims:$NODENV_ROOT/shims:$SWIFTENV_ROOT/bin:$PATH:$GOPATH/bin
 
 # Python user site packages
 if [[ "$system_type" = "Darwin" ]]; then
@@ -46,5 +49,3 @@ export IRBRC="$XDG_CONFIG_HOME/ruby/irbrc"
 [[ -f "$HOME/.bashrc" ]] && . "$HOME/.bashrc"
 
 [[ -f "$XDG_CONFIG_HOME/bash/env" ]] && . "$XDG_CONFIG_HOME/bash/env"
-
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
