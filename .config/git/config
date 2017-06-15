@@ -27,3 +27,5 @@
 	root = ~/.gvm/pkgsets/system/global
 [gpg]
 	program = gpg2
+[http]
+	postBuffer = 524288000
