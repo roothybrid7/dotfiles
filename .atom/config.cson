@@ -2,6 +2,9 @@
   "atom-beautify":
     general:
       _analyticsUserId: "804e5b24-c1ee-4574-9412-54db384201aa"
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui":
+      showDirectoryColumn: true
   autocomplete:
     includeCompletionsFromAllBuffers: true
   "autocomplete-plus":

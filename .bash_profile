@@ -43,6 +43,9 @@ else
 fi
 
 export IRBRC="$XDG_CONFIG_HOME/ruby/irbrc"
+
+[[ -f "$XDG_DATA_HOME/ansible/.provisioning_vault_pass.txt" ]] && export ANSIBLE_VAULT_PASSWORD_FILE=$XDG_DATA_HOME/ansible/.provisioning_vault_pass.txt
+
 [[ -f "$XDG_CONFIG_HOME/bash/profile.local" ]] && . "$XDG_CONFIG_HOME/bash/profile.local"
 
 # Use a dotfile in $HOME directory for regacy tools
