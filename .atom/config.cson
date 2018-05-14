@@ -5,6 +5,8 @@
   "atom-ide-ui":
     "atom-ide-diagnostics-ui":
       showDirectoryColumn: true
+  "atom-package-deps":
+    ignored: []
   autocomplete:
     includeCompletionsFromAllBuffers: true
   "autocomplete-plus":
@@ -26,6 +28,10 @@
         ".bashrc"
         "profile.local"
       ]
+    debugLSP: true
+    disabledPackages: [
+      "linter"
+    ]
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -33,8 +39,8 @@
     ]
   editor:
     fontFamily: "FiraCode-Retina"
-    fontSize: 11
     showIndentGuide: true
+    softWrap: true
   emmet: {}
   "exception-reporting":
     userId: "15735880-16cd-31df-d9cf-1e71db091feb"
