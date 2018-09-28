@@ -29,6 +29,7 @@
 	program = gpg2
 [http]
 	postBuffer = 524288000
+	cookiefile = /Users/satoshiohki/.gitcookies
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
