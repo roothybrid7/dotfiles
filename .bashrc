@@ -12,14 +12,9 @@ load_bash_completions() {
   done
 }
 
-if [[ -d "/etc/bash_completion.d" ]]; then
-  load_bash_completions "/etc/bash_completion.d/*"
-fi
-which brew >/dev/null && {
-  brew_prefix=$(brew --prefix)
-  load_bash_completions "$brew_prefix/etc/bash_completion.d/*"
-}
+brew_prefix=$(brew --prefix)
 
+[ -f "$brew_prefix/etc/bash_completion" ] && . "$brew_prefix/etc/bash_completion"
 [[ -f "$XDG_LIB_HOME/bash/gpip.sh" ]] && . "$XDG_LIB_HOME/bash/gpip.sh"
 [[ -f "$XDG_LIB_HOME/bash/ln_yadm_encrypt.sh" ]] && . "$XDG_LIB_HOME/bash/ln_yadm_encrypt.sh"
 
