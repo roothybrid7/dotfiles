@@ -30,8 +30,9 @@ export SWIFTENV_ROOT="$HOME/.swiftenv"
 export GOENVGOROOT="$XDG_LIB_HOME/.goenvs"
 export GOENVTARGET="$XDG_BIN_HOME"
 export GOENVHOME="$XDG_DATA_HOME/workspace"
+export ANDROID_SDK="$HOME/Library/Android/sdk"
 
-export PATH=/usr/local/sbin:$XDG_BIN_HOME:$PYENV_ROOT/shims:$RBENV_ROOT/shims:$NODENV_ROOT/shims:$SWIFTENV_ROOT/bin:$PATH:$GOPATH/bin
+export PATH=/usr/local/sbin:$XDG_BIN_HOME:$PYENV_ROOT/shims:$RBENV_ROOT/shims:$NODENV_ROOT/shims:$SWIFTENV_ROOT/bin:$PATH:$GOPATH/bin:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools
 
 # Python user site packages
 if [[ "$system_type" = "Darwin" ]]; then
