@@ -53,3 +53,4 @@ export IRBRC="$XDG_CONFIG_HOME/ruby/irbrc"
 [[ -f "$HOME/.bashrc" ]] && . "$HOME/.bashrc"
 
 [[ -f "$XDG_CONFIG_HOME/bash/env" ]] && . "$XDG_CONFIG_HOME/bash/env"
+export PATH="/usr/local/opt/libxml2/bin:$PATH"
