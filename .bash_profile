@@ -30,12 +30,14 @@ export SWIFTENV_ROOT="$HOME/.swiftenv"
 export GOENVGOROOT="$XDG_LIB_HOME/.goenvs"
 export GOENVTARGET="$XDG_BIN_HOME"
 export GOENVHOME="$XDG_DATA_HOME/workspace"
-export ANDROID_SDK="$HOME/Library/Android/sdk"
+export ANDROID_HOME="$HOME/Library/Android"
+export ANDROID_SDK_ROOT="$ANDROID_HOME/sdk"
+export ANDROID_SDK="$ANDROID_SDK_ROOT"
 
-export PATH=/usr/local/sbin:$XDG_BIN_HOME:$PYENV_ROOT/shims:$RBENV_ROOT/shims:$NODENV_ROOT/shims:$SWIFTENV_ROOT/bin:$PATH:$GOPATH/bin:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools
+export PATH=/usr/local/sbin:$XDG_BIN_HOME:$PYENV_ROOT/shims:$RBENV_ROOT/shims:$NODENV_ROOT/shims:$SWIFTENV_ROOT/bin:$PATH:$GOPATH/bin:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$PATH
 
 # Python user site packages
-if [[ "$system_type" = "Darwin" ]]; then
+if [[ "$system_type" == "Darwin" ]]; then
   py_ver=$(/usr/bin/python -V 2>&1 >/dev/null | sed -e 's/Python *//g' | awk -F'.' '{OFS=".";print $1,$2}')
   py_ver=$(echo -n $py_ver)
   export PATH=$HOME/Library/Python/$py_ver/bin:$PATH
