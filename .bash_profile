@@ -45,6 +45,10 @@ else
   export PATH=$HOME/.local/bin:$PATH
 fi
 
+if [[ -f /usr/libexec/java_home ]]; then
+  export JAVA_HOME=$(/usr/libexec/java_home)
+fi
+
 export IRBRC="$XDG_CONFIG_HOME/ruby/irbrc"
 
 [[ -f "$XDG_DATA_HOME/ansible/.provisioning_vault_pass.txt" ]] && export ANSIBLE_VAULT_PASSWORD_FILE=$XDG_DATA_HOME/ansible/.provisioning_vault_pass.txt
