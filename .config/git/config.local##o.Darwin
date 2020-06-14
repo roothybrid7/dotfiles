@@ -1,0 +1,8 @@
+[user]
+	name = Satoshi Ohki
+	email = roothybrid7@gmail.com
+	signingkey = 6551AC9011140CEA
+[credential]
+	helper = osxkeychain
+[commit]
+	gpgsign = true
