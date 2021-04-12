@@ -1,0 +1,4 @@
+#!/bin/bash
+
+basedev_docker_root=~/src/github.com/baseinc/basedev-docker
+[[ -d "$basedev_docker_root" ]] && export PATH=$basedev_docker_root/bin:$PATH
