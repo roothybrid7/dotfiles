@@ -1,3 +1,3 @@
-.config/git/config.local##Darwin
 .gem/credentials
-.config/bash/profile.local##Work.Darwin
+.config/git/config.local##*
+.config/bash/profile.local##*
