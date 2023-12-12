@@ -1,40 +1,40 @@
 [core]
-	pager = lv -c
+pager = lv -c
 [color]
-	branch = auto
-	diff = auto
-	status = auto
-	ui = auto
+branch = auto
+diff = auto
+status = auto
+ui = auto
 [alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
-	di = diff
-	dic = diff --cached
-	tree = log --graph --decorate --oneline
+co = checkout
+br = branch
+ci = commit
+st = status
+di = diff
+dic = diff --cached
+tree = log --graph --decorate --oneline
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+trustExitCode = true
 [include]
-	path = ~/.config/git/config.local
+path = ~/.config/git/config.local
 [ghq]
-	root = ~/.ghq
-	root = ~/.go/src
-	root = ~/src
+root = ~/.ghq
+root = ~/.go/src
+root = ~/src
 [gpg]
-	program = gpg2
+program = gpg
 [http]
-	postBuffer = 524288000
-	cookiefile = /Users/satoshiohki/.gitcookies
+postBuffer = 524288000
+cookiefile = /Users/satoshiohki/.gitcookies
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+process = git-lfs filter-process
+required = true
 [user]
-	name = Satoshi OHKI
-	email = roothybrid7@gmail.com
+name = Satoshi OHKI
+email = roothybrid7@gmail.com
